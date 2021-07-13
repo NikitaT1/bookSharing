@@ -1,0 +1,22 @@
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+   
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
