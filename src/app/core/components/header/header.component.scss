@@ -1,12 +1,18 @@
-header {
-  
+.header {
+    height: 70px;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.9;
+    position: fixed;
+    color: whitesmoke
 }
-
 .container {
-    background-color: rgba(0, 255, 255, 0.425);
     width: 80%;
     display: flex;
-    justify-content: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
