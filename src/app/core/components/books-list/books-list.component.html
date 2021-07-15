@@ -1,28 +1,38 @@
-<div class="booksList">
-<div>
-  <h1 [textContent]="title"></h1>
-</div>
-<table>
-  <thead>
+
+<div class="books-list">
+  <table>
+    <thead> 
     <tr>
-      <th>{{ books[0] }}</th>
-      <th>{{ genres[0] }}</th>
-      <th>{{ rating[0] }}</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Rating</th>
     </tr>
   </thead>
-  <thead>
-    <tr>
-      <th>{{ books[1] }}</th>
-      <th>{{ genres[1] }}</th>
-      <th>{{ rating[1] }}</th>
-    </tr>
-  </thead>
-  <thead>
-    <tr>
-      <th>{{ books[2] }}</th>
-      <th>{{ genres[2] }}</th>
-      <th>{{ rating[2] }}</th>
-    </tr>
-  </thead>
-</table>
+    <thead> 
+      <tr>
+        <th>{{ books[0] }}</th>
+        <th>{{ author[0] }}</th>
+        <th>{{ genres[0] }}</th>
+        <th>{{ rating[0] }}</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th>{{ books[1] }}</th>
+        <th>{{ author[1] }}</th>
+        <th>{{ genres[1] }}</th>
+        <th>{{ rating[1] }}</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th>{{ books[2] }}</th>
+        <th>{{ author[2] }}</th>
+        <th>{{ genres[2] }}</th>
+        <th>{{ rating[2] }}</th>
+      </tr>
+    </thead>
+  </table>
+  
 </div>

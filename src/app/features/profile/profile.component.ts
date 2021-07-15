@@ -19,13 +19,9 @@ export class ProfileComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) {
     this.buildForm();
 
-    this.details$.subscribe(console.log);
-    this.text$.subscribe(console.log);
   }
 
   onSubmit() {
-    //
-    console.log(this.newProfileForm.value);
   }
 
   ngOnInit(): void {
@@ -37,11 +33,4 @@ export class ProfileComponent implements OnInit {
     });
   }
 
-  // UpdateFormStatus({ status, path }) - Update the form status
-  // UpdateFormValue({ value, path, propertyPath? }) - Update the form value (or optionally an inner property value)
-  // UpdateFormDirty({ dirty, path }) - Update the form dirty status
-  // SetFormDisabled(path) - Set the form to disabled
-  // SetFormEnabled(path) - Set the form to enabled
-  // SetFormDirty(path) - Set the form to dirty (shortcut for UpdateFormDirty)
-  // SetFormPristine(path) - Set the form to pristine (shortcut for UpdateFormDirty)
 }
