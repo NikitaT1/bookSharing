@@ -5,28 +5,22 @@ import { FormComponent } from './components/form/form.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { SearchComponent } from './components/search/search.component';
 
-
-
-
 @NgModule({
   declarations: [
     AddButtonComponent,
     FavoriteButtonComponent,
     FormComponent,
     PaginationComponent,
-    SearchComponent
+    SearchComponent,
   ],
-  imports: [
-],
-  providers: [
-   
-  ],
+  imports: [],
+  providers: [],
   exports: [
     AddButtonComponent,
     FavoriteButtonComponent,
     FormComponent,
     PaginationComponent,
-    SearchComponent
-  ]
-}) 
-export class SharedModule { }
+    SearchComponent,
+  ],
+})
+export class SharedModule {}

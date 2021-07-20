@@ -1,12 +1,7 @@
 import { NgModule } from '@angular/core';
-import { SharedModule } from '@app/shared/shared.module';
-
-
 
 @NgModule({
   declarations: [],
-  imports: [
-    SharedModule
-  ]
+  imports: [],
 })
-export class AdminModule { }
+export class AdminModule {}

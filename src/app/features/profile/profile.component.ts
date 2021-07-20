@@ -3,14 +3,6 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProfileComponent implements OnInit {
- 
-  onSubmit() {
-  }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ProfileComponent {}

@@ -5,8 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './favorite-button.component.html',
   styleUrls: ['./favorite-button.component.scss'],
 })
-export class FavoriteButtonComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class FavoriteButtonComponent {}
