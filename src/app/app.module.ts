@@ -3,18 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BooksListComponent } from './books-list/books-list.component';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+import { HomepageModule } from './features/homepage/homepage.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BooksListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  imports: [CoreModule, SharedModule, BrowserModule, AppRoutingModule, HomepageModule],
+
+providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
