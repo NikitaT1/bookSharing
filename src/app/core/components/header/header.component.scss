@@ -1,6 +1,3 @@
-.profile-menu,
-.profile,
-.browse-category,
 .browse {
   display: flex;
   align-items: center;
@@ -14,7 +11,7 @@
   background-color: var(--page-bg-color);
   margin: 0 auto;
   overflow: hidden;
-  box-shadow: 0px 2px 50px 10px rgba(0, 0, 0, 0.21);
+  box-shadow: 0 2px 50px 10px rgba(0, 0, 0, 0.21);
 }
 
 .header {
@@ -34,16 +31,18 @@
 .browse-category {
   border-right: 1px solid var(--border-color);
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .header-title {
   font-size: 16px;
   font-weight: 400;
   margin-right: 120px;
-}
-.header-title span {
-  font-weight: 500;
-  color: var(--body-color);
+  span {
+    font-weight: 500;
+    color: var(--body-color);
+  }
 }
 
 .user-img {
@@ -72,16 +71,21 @@
 }
 
 .profile {
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+
+  svg {
+    width: 16px;
+    margin: 0 8px 0 15px;
+    flex-shrink: 0;
+  }
 }
 .profile-menu {
+  display: flex;
+  align-items: center;
   border-left: 1px solid var(--border-color);
   cursor: pointer;
-}
-.profile svg {
-  width: 16px;
-  margin: 0 8px 0 15px;
-  flex-shrink: 0;
 }
 .genrebtn {
   padding: 14px;
@@ -101,20 +105,20 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   cursor: pointer;
-}
 
-.genre-list a {
-  background-color: #f9f9f9;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+  a {
+    background-color: #f9f9f9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
-.genre-list a:hover {
-  background-color: #f1f1f1;
+  :hover {
+    background-color: #f1f1f1;
+  }
 }
 
 .genredrop:hover .genre-list {
@@ -122,5 +126,5 @@
 }
 
 .genredrop:hover .genrebtn {
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
