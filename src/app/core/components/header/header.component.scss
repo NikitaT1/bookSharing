@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 }
- 
+
 .header {
   display: flex;
   align-items: center;
@@ -28,6 +28,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-right: 120px;
+
   span {
     font-weight: 500;
     color: var(--body-color);
@@ -45,18 +46,19 @@
   position: relative;
   cursor: pointer;
   flex-shrink: 0;
-}
-.user-profile:before {
-  content: "";
-  position: absolute;
-  background-color: #f86d72;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border: 2px solid var(--theme-bg-color);
-  right: 12px;
-  top: -3px;
-  border: 2px solid #fff;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #f86d72;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid var(--theme-bg-color);
+    right: 12px;
+    top: -3px;
+    border: 2px solid #fff;
+  }
 }
 
 .profile {
@@ -70,12 +72,14 @@
     flex-shrink: 0;
   }
 }
+
 .profile-menu {
   display: flex;
   align-items: center;
   border-left: 1px solid var(--border-color);
   cursor: pointer;
 }
+
 .genrebtn {
   padding: 14px;
   margin-right: 15px;
@@ -87,6 +91,14 @@
 .genredrop {
   position: relative;
   display: inline-block;
+}
+
+.genredrop:hover .genre-list {
+  display: block;
+}
+
+.genredrop:hover .genrebtn {
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .genre-list {
@@ -108,12 +120,4 @@
   :hover {
     background-color: #f1f1f1;
   }
-}
-
-.genredrop:hover .genre-list {
-  display: block;
-}
-
-.genredrop:hover .genrebtn {
-  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
