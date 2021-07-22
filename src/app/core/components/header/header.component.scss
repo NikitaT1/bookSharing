@@ -2,18 +2,7 @@
   display: flex;
   align-items: center;
 }
-
-.book-store {
-  display: flex;
-  flex-direction: column;
-  max-width: 1400px;
-  height: 100vh;
-  background-color: var(--page-bg-color);
-  margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 0 2px 50px 10px rgba(0, 0, 0, 0.21);
-}
-
+ 
 .header {
   display: flex;
   align-items: center;
