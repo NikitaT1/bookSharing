@@ -1,19 +1,20 @@
 body {
-    scroll-behavior: smooth;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  background-color: #fff;
+  background-attachment: fixed;
+  font-family: var(--body-font);
+  color: var(--body-color);
+  font-weight: 400;
+  margin: 0;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.book-sharing {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  height: 100vh;
+  background-color: var(--page-bg-color);
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 2px 50px 10px rgba(0, 0, 0, .21);
 }
 
