@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksListComponent {
   title = 'Title';
-  books = ['book1', 'book2', 'book3'];
+  books = [' The Lord of the Rings', 'The Hitchhiker’s Guide to the Galaxy', 'Dune'];
   genres = ['genre1', 'genre2', 'genre3'];
+  author = ['J.R.R. Tolkien', 'Douglas Adams', 'Frank Herbert'];
   rating = ['1', '2', '3']; 
 }

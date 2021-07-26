@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { BooksListComponent } from './books-list/books-list.component';
 
 @NgModule({
-  declarations: [BooksListComponent],
+  declarations: [BooksListComponent ],
   imports: [CommonModule],
-  exports: [BooksListComponent],
+  
+exports: [BooksListComponent],
 })
 
 export class HomepageModule {}
