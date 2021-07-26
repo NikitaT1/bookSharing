@@ -36,6 +36,7 @@
   margin-bottom: 40px;
 }
 
+
 .book-img {
   border-radius: 0%;
   width: 100px;
@@ -121,6 +122,7 @@ table {
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 
+
 .over-hide {
   overflow: hidden;
 }
@@ -179,7 +181,7 @@ table {
   position: absolute;
   content: "";
   z-index: -1;
-  background-color: #ffeba7;
+  background-color: #f9f9f9;
   width: 140px;
   height: 40px;
   display: block;
@@ -280,7 +282,7 @@ table {
   box-shadow: 0 6px 20px 0 rgba(16, 39, 112, 0.3);
   animation: border-transform 6s linear infinite;
 }
-.card-back .pricing-wrap h4:before {
+.card-back  {
   background: linear-gradient(217deg, #648946, #a3c984);
 }
 
