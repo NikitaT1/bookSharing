@@ -12,7 +12,7 @@ import { SearchComponent } from './components/search/search.component';
     FormComponent,
     PaginationComponent,
     SearchComponent,
-  ],
+  ], 
   imports: [],
   providers: [],
   exports: [

@@ -73,20 +73,13 @@
           <tr>
             <th></th>
             <th>
-              <div class="genredrop">
-                <button class="genrebtn">Title</button>
-                <div class="genre-list">
-                  <a>A - Z </a>
-                  <a>Z - A</a>
-                </div>
-              </div>
+              <app-add-button></app-add-button>
             </th>
             <th>
               <div class="genredrop">
                 <button class="genrebtn">Author</button>
                 <div class="genre-list">
-                  <a>A - Z </a>
-                  <a>Z - A</a>
+                  <a *ngFor="let item of author">{{item}}</a> 
                 </div>
               </div>
             </th>
