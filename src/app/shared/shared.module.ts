@@ -4,6 +4,7 @@ import { FavoriteButtonComponent } from './components/favorite-button/favorite-b
 import { FormComponent } from './components/form/form.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { SearchComponent } from './components/search/search.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -12,8 +13,8 @@ import { SearchComponent } from './components/search/search.component';
     FormComponent,
     PaginationComponent,
     SearchComponent,
-  ], 
-  imports: [],
+  ],
+  imports: [CommonModule],
   providers: [],
   exports: [
     AddButtonComponent,

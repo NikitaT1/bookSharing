@@ -9,9 +9,15 @@ import { HomepageModule } from './features/homepage/homepage.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [CoreModule, SharedModule, BrowserModule, AppRoutingModule, HomepageModule],
+  imports: [
+    CoreModule,
+    SharedModule,
+    BrowserModule,
+    AppRoutingModule,
+    HomepageModule,
+  ],
 
-providers: [],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

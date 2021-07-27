@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BooksListService } from './books-list.service';
 @Component({
   selector: 'books-list',
@@ -8,14 +8,12 @@ import { BooksListService } from './books-list.service';
 export class BooksListComponent {
   books = [' The Lord of the Rings', 'The Hitchhiker’s Guide to the Galaxy', 'Dune'];
   genres
-  author
+  author 
   rating = ['1', '2', '3']; 
-
-  constructor(service: BooksListService) {
-    this.author = service.getAuthors()
-
-    this.genres = service.getGenres()
+  
+  
+  constructor(private bookstListService: BooksListService) {
+    this.author = this.bookstListService.getAuthors()
+    this.genres = this.bookstListService.getGenres()
   }
-
-
 }
