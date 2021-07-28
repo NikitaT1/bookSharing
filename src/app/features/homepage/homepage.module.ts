@@ -5,12 +5,14 @@ import { AddButtonModule } from './../../shared/components/add-button/add-button
 import { BooksListService } from './books-list/books-list.service';
 import { TopBooksComponent } from './top-books/top-books.component';
 import { GenresListComponent } from './genres-list/genres-list.component';
+import { GenresListService } from './genres-list/genres.service';
 
 @NgModule({
   declarations: [BooksListComponent, TopBooksComponent, GenresListComponent],
   imports: [CommonModule, AddButtonModule],
   
+
 exports: [BooksListComponent, TopBooksComponent, GenresListComponent],
-  providers: [BooksListService],
+  providers: [BooksListService, GenresListService],
 })
 export class HomepageModule {}

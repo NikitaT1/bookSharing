@@ -1,5 +1,3 @@
-
-
 export class BooksListService {
     getTitles() {
         return ["genre1", "genre2", "genre3"]
