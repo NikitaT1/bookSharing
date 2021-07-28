@@ -3,6 +3,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchModule } from './../shared/components/search/search.module';
+import { AddButtonModule } from './../shared/components/add-button/add-button.module';
 
 @NgModule({
   declarations: [
@@ -10,8 +11,9 @@ import { SearchModule } from './../shared/components/search/search.module';
     NavbarComponent,
     FooterComponent
   ],
-  imports: [SearchModule],
-  
+  imports: [SearchModule, AddButtonModule],
+
+
 providers: [],
   exports: [
     HeaderComponent,
