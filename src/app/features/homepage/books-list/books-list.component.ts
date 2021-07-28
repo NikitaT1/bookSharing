@@ -7,6 +7,7 @@ import { BooksListService } from './books-list.service';
 })
 export class BooksListComponent {
   books
+  buttonContent = {authors:['A - Z', 'Z - A'], rating: ['Max', 'Min']}
 
   constructor(private bookstListService: BooksListService) {
     this.books = this.bookstListService.getBooks()

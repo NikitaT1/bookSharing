@@ -1,81 +1,3 @@
-<!-- <div class="books">
-  <div class="booksList">
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>
-            <app-add-button></app-add-button>
-          </th>
-          <th>
-            <app-add-button [items]="author" name="Author"></app-add-button>
-          </th>
-          <th>
-            <div class="genredrop">
-              <button class="genrebtn">Genres</button>
-              <div class="genre-list">
-                <a>Genre 1</a>
-                <a>Genre 2</a>
-                <a>Genre 3</a>
-              </div>
-            </div>
-          </th>
-          <th>
-            <div class="genredrop">
-              <button class="genrebtn">Rating</button>
-              <div class="genre-list">
-                <a *ngFor="let item of rating">{{ item }}</a>
-              </div>
-            </div>
-          </th>
-        </tr>
-        <tr>
-          <th class="cell-cover">
-            <img
-              src="https://images.gr-assets.com/books/1411114164l/33.jpg"
-              alt=""
-              class="book-img"
-            />
-          </th>
-          <th class="cell-cover">{{ books[0] }}</th>
-          <th class="cell-cover">{{ author[0] }}</th>
-          <th class="cell-cover">{{ genres[0] }}</th>
-          <th class="cell-cover">{{ rating[0] }}</th>
-        </tr>
-      </thead>
-      <thead>
-        <tr>
-          <th class="cell">
-            <img
-              src="https://images.gr-assets.com/books/1388282444l/386162.jpg"
-              alt=""
-              class="book-img"
-            />
-          </th>
-          <th class="cell-cover">{{ books[1] }}</th>
-          <th class="cell-cover">{{ author[1] }}</th>
-          <th class="cell-cover">{{ genres[1] }}</th>
-          <th class="cell-cover">{{ rating[1] }}</th>
-        </tr>
-      </thead>
-      <thead>
-        <tr>
-          <th class="cell-cover">
-            <img
-              src="https://images.gr-assets.com/books/1434908555l/234225.jpg"
-              alt=""
-              class="book-img"
-            />
-          </th>
-          <th class="cell-cover">{{ books[2] }}</th>
-          <th class="cell-cover">{{ author[2] }}</th>
-          <th class="cell-cover">{{ genres[2] }}</th>
-          <th class="cell-cover">{{ rating[2] }}</th>
-        </tr>
-      </thead>
-    </table>
-  </div>
-</div> -->
 <div class="books">
   <table>
     <thead>
@@ -83,11 +5,18 @@
         <th>List of books</th>
       </tr>
       <tr>
-        <th>List of books</th>
+        <th class="cell-cover"></th>
+        <th class="cell-cover"></th>
+        <th class="cell-cover">
+          <app-add-button [items]="buttonContent.authors" name="Author"></app-add-button>
+        </th>
+        <th class="cell-cover"></th>
+        <th class="cell-cover">
+          <app-add-button [items]="buttonContent.rating" name="Rating"></app-add-button>
+        </th>
       </tr>
       <div class="line"></div>
     </thead>
-
     <tbody>
       <tr *ngFor="let book of books">
         <th class="cell-cover">
