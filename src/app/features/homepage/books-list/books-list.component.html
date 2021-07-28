@@ -1,147 +1,79 @@
-<!-- <div class="main-wrapper"> -->
-  <!-- <div class="books-of">
-    <div class="section over-hide">
-      <div class="container">
-        <div class="row full-height justify-content-center">
-          <div class="col-12 text-center align-self-center py-5">
-            <div class="section text-center py-5 py-md-0">
-              <input
-                class="pricing"
-                type="checkbox"
-                id="pricing"
-                name="pricing"
-              />
-              <label for="pricing"
-                ><span class="block-diff"
-                  >Top books <span class="float-right">Top authors</span></span
-                ></label
-              >
-              <div class="card-3d-wrap mx-auto">
-                <div class="card-3d-wrapper">
-                  <div class="card-front">
-                    <div class="pricing-wrap">
-                      <div class="top-book">
-                        <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Johan_Huizinga%3B_Autumntide_of_the_Middle_Ages._Book_cover.jpg/220px-Johan_Huizinga%3B_Autumntide_of_the_Middle_Ages._Book_cover.jpg"
-                          alt="Autumn of Middle Ages"
-                          class="book-img"
-                        />
-                        <div class="book-name">Autumn of Middle Ages</div>
-                      </div>
-                      <div class="top-book">
-                        <img
-                          src="https://m.media-amazon.com/images/I/61I7Rx1BFEL.jpg"
-                          alt="Autumn of Middle Ages"
-                          class="book-img"
-                        />
-                        <div class="book-name">The Book of Kells</div>
-                      </div>
-                      <div class="top-book">
-                        <img
-                          src="https://images-na.ssl-images-amazon.com/images/I/51sHFNj+6CL._SX304_BO1,204,203,200_.jpg"
-                          alt="Heimskringla"
-                          class="book-img"
-                        />
-                        <div class="book-name">Heimskringla</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-back">
-                    <div class="pricing-wrap">
-                      <div class="top-book">
-                        <img
-                          src="https://biografii.net/wp-content/uploads/2018/12/02_yp9RZsk.jpg"
-                          alt="J.R.R. Tolkin"
-                          class="book-img"
-                        />
-                        <div class="book-name">J.R.R. Tolkin</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+<div class="books">
+  <div class="booksList">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            <app-add-button></app-add-button>
+          </th>
+          <th>
+            <app-add-button [items]="author" name="Author"></app-add-button>
+          </th>
+          <th>
+            <div class="genredrop">
+              <button class="genrebtn">Genres</button>
+              <div class="genre-list">
+                <a>Genre 1</a>
+                <a>Genre 2</a>
+                <a>Genre 3</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <div class="books">
-    <div class="booksList">
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>
-              <app-add-button ></app-add-button>
-            </th>
-            <th>
-              <app-add-button [items]="author" name="Author"></app-add-button>
-            </th>
-            <th>
-              <div class="genredrop">
-                <button class="genrebtn">Genres</button>
-                <div class="genre-list">
-                  <a>Genre 1</a>
-                  <a>Genre 2</a>
-                  <a>Genre 3</a>
-                </div>
+          </th>
+          <th>
+            <div class="genredrop">
+              <button class="genrebtn">Rating</button>
+              <div class="genre-list">
+                <a *ngFor="let item of rating">{{ item }}</a>
               </div>
-            </th>
-            <th>
-              <div class="genredrop">
-                <button class="genrebtn">Rating</button>
-                <div class="genre-list">
-                  <a *ngFor="let item of rating">{{item}}</a> 
-                </div>
-              </div>
-            </th>
-          </tr>
-          <tr>
-            <th class="cell-cover">
-              <img
-                src="https://images.gr-assets.com/books/1411114164l/33.jpg"
-                alt=""
-                class="book-img"
-              />
-            </th>
-            <th class="cell-cover">{{ books[0] }}</th>
-            <th class="cell-cover">{{ author[0] }}</th>
-            <th class="cell-cover">{{ genres[0] }}</th>
-            <th class="cell-cover">{{ rating[0] }}</th>
-          </tr>
-        </thead>
-        <thead>
-          <tr>
-            <th class="cell">
-              <img
-                src="https://images.gr-assets.com/books/1388282444l/386162.jpg"
-                alt=""
-                class="book-img"
-              />
-            </th>
-            <th class="cell-cover">{{ books[1] }}</th>
-            <th class="cell-cover">{{ author[1] }}</th>
-            <th class="cell-cover">{{ genres[1] }}</th>
-            <th class="cell-cover">{{ rating[1] }}</th>
-          </tr>
-        </thead>
-        <thead>
-          <tr>
-            <th class="cell-cover">
-              <img
-                src="https://images.gr-assets.com/books/1434908555l/234225.jpg"
-                alt=""
-                class="book-img"
-              />
-            </th>
-            <th class="cell-cover">{{ books[2] }}</th>
-            <th class="cell-cover">{{ author[2] }}</th>
-            <th class="cell-cover">{{ genres[2] }}</th>
-            <th class="cell-cover">{{ rating[2] }}</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th class="cell-cover">
+            <img
+              src="https://images.gr-assets.com/books/1411114164l/33.jpg"
+              alt=""
+              class="book-img"
+            />
+          </th>
+          <th class="cell-cover">{{ books[0] }}</th>
+          <th class="cell-cover">{{ author[0] }}</th>
+          <th class="cell-cover">{{ genres[0] }}</th>
+          <th class="cell-cover">{{ rating[0] }}</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th class="cell">
+            <img
+              src="https://images.gr-assets.com/books/1388282444l/386162.jpg"
+              alt=""
+              class="book-img"
+            />
+          </th>
+          <th class="cell-cover">{{ books[1] }}</th>
+          <th class="cell-cover">{{ author[1] }}</th>
+          <th class="cell-cover">{{ genres[1] }}</th>
+          <th class="cell-cover">{{ rating[1] }}</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th class="cell-cover">
+            <img
+              src="https://images.gr-assets.com/books/1434908555l/234225.jpg"
+              alt=""
+              class="book-img"
+            />
+          </th>
+          <th class="cell-cover">{{ books[2] }}</th>
+          <th class="cell-cover">{{ author[2] }}</th>
+          <th class="cell-cover">{{ genres[2] }}</th>
+          <th class="cell-cover">{{ rating[2] }}</th>
+        </tr>
+      </thead>
+    </table>
   </div>
+</div>
 <!-- </div> -->
