@@ -12,4 +12,8 @@ export class BooksListComponent {
   constructor(private bookstListService: BooksListService) {
     this.books = this.bookstListService.getBooks()
   }
+
+  onFavoriteChanged(id: number){
+    this.bookstListService.changeFavorite(id)
+  }
 }

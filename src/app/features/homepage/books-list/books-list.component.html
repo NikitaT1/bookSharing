@@ -1,32 +1,39 @@
-<div class="books">
-  <table>
-    <thead>
-      <tr>
-        <th>List of books</th>
-      </tr>
-      <tr>
-        <th class="cell-cover"></th>
-        <th class="cell-cover"></th>
-        <th class="cell-cover">
-          <app-add-button [items]="buttonContent.authors" name="Author"></app-add-button>
-        </th>
-        <th class="cell-cover"></th>
-        <th class="cell-cover">
-          <app-add-button [items]="buttonContent.rating" name="Rating"></app-add-button>
-        </th>
-      </tr>
-      <div class="line"></div>
-    </thead>
-    <tbody>
-      <tr *ngFor="let book of books">
-        <th class="cell-cover">
-          <img src="{{ book.img }}" alt="" class="book-img" />
-        </th>
-        <td class="cell-cover">{{ book.name }}</td>
-        <td class="cell-cover">{{ book.author }}</td>
-        <td class="cell-cover">{{ book.genre }}</td>
-        <td class="cell-cover">{{ book.rating }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table class="books">
+  <thead>
+    <tr>
+      <th>List of books</th>
+    </tr>
+    <tr>
+      <th class="cell-cover"></th>
+      <th class="cell-cover"></th>
+      <th class="cell-cover">
+        <app-add-button
+          [items]="buttonContent.authors"
+          name="Author"
+        ></app-add-button>
+      </th>
+      <th class="cell-cover"></th>
+      <th class="cell-cover">
+        <app-add-button
+          [items]="buttonContent.rating"
+          name="Rating"
+        ></app-add-button>
+      </th>
+    </tr>
+    <div class="line"></div>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <th class="cell-cover">
+        <img src="{{ book.img }}" alt="" class="book-img" />
+      </th>
+      <td class="cell-cover">{{ book.name }}</td>
+      <td class="cell-cover">{{ book.author }}</td>
+      <td class="cell-cover">{{ book.genre }}</td>
+      <td class="cell-cover">{{ book.rating }}</td>
+      <td class="cell-cover">
+        <app-favorite-button [isFavorite]="book.isFavorite" (click)="onFavoriteChanged(book.id)"></app-favorite-button>
+      </td>
+    </tr>
+  </tbody>
+</table>

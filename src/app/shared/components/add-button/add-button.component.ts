@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class AddButtonComponent implements OnInit{
   @Input() items: string[] = [];
-  @Input('name') buttonName: string = ''
+  @Input('name') buttonName = ''
 
   constructor(){
     console.log('constuctor: ', this.items)
