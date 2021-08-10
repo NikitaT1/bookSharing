@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchModule } from './../shared/components/search/search.module';
 import { AddButtonModule } from './../shared/components/add-button/add-button.module';
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { AddButtonModule } from './../shared/components/add-button/add-button.mo
     NavbarComponent,
     FooterComponent
   ],
-  imports: [SearchModule, AddButtonModule],
+  imports: [SearchModule, AddButtonModule, MatIconModule],
 
 
 providers: [],
