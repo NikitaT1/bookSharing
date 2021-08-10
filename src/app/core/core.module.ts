@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SharedModule } from '../shared/shared.module';
+import { SearchModule } from './../shared/components/search/search.module';
+import { AddButtonModule } from './../shared/components/add-button/add-button.module';
 
 @NgModule({
   declarations: [
@@ -10,8 +11,10 @@ import { SharedModule } from '../shared/shared.module';
     NavbarComponent,
     FooterComponent
   ],
-  imports: [SharedModule],
-  providers: [],
+  imports: [SearchModule, AddButtonModule],
+
+
+providers: [],
   exports: [
     HeaderComponent,
     NavbarComponent,
