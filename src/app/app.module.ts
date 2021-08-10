@@ -3,18 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BooksListComponent } from './books-list/books-list.component';
+import { CoreModule } from './core/core.module';
+import { AddButtonModule } from './shared/components/add-button/add-button.module';
+import { SearchModule } from './shared/components/search/search.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BooksListComponent
-  ],
+  declarations: [AppComponent],
   imports: [
+    CoreModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AddButtonModule,
+    SearchModule,
+    NoopAnimationsModule,
+    HttpClientModule
   ],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
