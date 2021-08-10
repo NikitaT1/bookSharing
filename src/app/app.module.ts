@@ -7,6 +7,8 @@ import { CoreModule } from './core/core.module';
 import { AddButtonModule } from './shared/components/add-button/add-button.module';
 import { SearchModule } from './shared/components/search/search.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -16,6 +18,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AddButtonModule,
     SearchModule,
     NoopAnimationsModule,
+    HttpClientModule
   ],
 
   providers: [],

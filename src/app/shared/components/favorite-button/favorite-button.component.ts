@@ -6,13 +6,11 @@ import { Component, Input, Output, EventEmitter, } from '@angular/core';
   styleUrls: ['./favorite-button.component.scss'],
 })
 export class FavoriteButtonComponent {
-  @Input('isFavorite') isFavorite: boolean = true;
-  @Output('change') change = new EventEmitter();
+  @Input() isFavorite = true;
+  @Output() change = new EventEmitter();
 
-  onClick(){
-    this.isFavorite ? this.isFavorite= false : this.isFavorite = true
-    this.change.emit({newValue: this.isFavorite})
-  }
-
-
+  // onClick(){
+  //   this.isFavorite ? this.isFavorite= false : this.isFavorite = true
+  //   this.change.emit({newValue: this.isFavorite})
+  // }
 }
