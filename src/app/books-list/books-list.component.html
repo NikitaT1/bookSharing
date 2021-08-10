@@ -1,0 +1,5 @@
+<h2>{{"Number of books: " + books.length}}</h2>
+<ul>
+    <li *ngFor="let book of books">{{book}}</li>
+</ul>
+<button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
