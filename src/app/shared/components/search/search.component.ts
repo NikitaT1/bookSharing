@@ -1,5 +1,5 @@
 import { ElementRef } from '@angular/core';
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { fromEvent, merge, Observable } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 @Component({

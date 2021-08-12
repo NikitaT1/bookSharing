@@ -18,13 +18,12 @@
   column-gap: 15px
 }
 
-.notification {
+.notification,
+.user-menu-container {
+  width: 42px;
   cursor: pointer;
-  display: flex
-}
- 
-.bell-icon {
-  margin: auto
+  display: flex;
+  justify-content: center;
 }
 
 .header-title {

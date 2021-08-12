@@ -1,17 +1,33 @@
 <div class="header">
   <div class="header-title">read<span>books</span></div>
   <div class="header-content">
+
     <app-search></app-search>
+
     <div class="notification">
-      <mat-icon matBadge="15" matBadgeColor="warn" class="bell-icon">notifications_none</mat-icon>
+      <mat-icon
+        [matBadge]="notifications"
+        matBadgeColor="warn"
+        [matBadgeHidden]="!notifications"
+        matBadgeSize="small"
+        class="bell-icon"
+      >notifications_none</mat-icon>
     </div>
-    <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
+
+    <div class="user-menu-container">
+      <button
+        mat-button
+        [matMenuTriggerFor]="menu"
+        class="user-menu"
+      ></button>
+    </div>
+
     <mat-menu #menu="matMenu">
-  <button mat-menu-item>Add book</button>
-  <button mat-menu-item>requests</button>
-  <button mat-menu-item>profile</button>
-  <button mat-menu-item>logout</button>
-  </mat-menu>
+      <button mat-menu-item>Add book</button>
+      <button mat-menu-item>requests</button>
+      <button mat-menu-item>profile</button>
+      <button mat-menu-item>logout</button>
+    </mat-menu>
 
   </div>
 </div>
