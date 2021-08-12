@@ -2,6 +2,7 @@
   <input type="text" placeholder="Search Book" />
 </div> -->
 
-<form id="search">
-  <input type="search" placeholder="Search">
-</form>
+<form class="searchForm" (click)="searchInput.focus()" [class.active]="(active$ | async) || searchInput.value">
+  <mat-icon class="searchIcon">search</mat-icon>
+  <input type="search" #searchInput placeholder="Search">
+</form>   

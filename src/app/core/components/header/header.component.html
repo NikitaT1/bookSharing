@@ -3,8 +3,15 @@
   <div class="header-content">
     <app-search></app-search>
     <div class="notification">
-      <mat-icon matBadge="15" matBadgeColor="warn">notifications_none</mat-icon>
+      <mat-icon matBadge="15" matBadgeColor="warn" class="bell-icon">notifications_none</mat-icon>
     </div>
-    <div class="user-menu"></div>
+    <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
+    <mat-menu #menu="matMenu">
+  <button mat-menu-item>Add book</button>
+  <button mat-menu-item>requests</button>
+  <button mat-menu-item>profile</button>
+  <button mat-menu-item>logout</button>
+  </mat-menu>
+
   </div>
 </div>

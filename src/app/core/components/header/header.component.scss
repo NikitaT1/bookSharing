@@ -9,19 +9,22 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--body-color-light);
-  justify-content: space-between;
-  flex-shrink: 0;
+  border-bottom: 1px solid #efefef
 }
 
 .header-content {
   display: flex;
   align-items: center;
+  column-gap: 15px
 }
 
 .notification {
-  margin-left: 15px;
-  margin-right: 15px;
   cursor: pointer;
+  display: flex
+}
+ 
+.bell-icon {
+  margin: auto
 }
 
 .header-title {
