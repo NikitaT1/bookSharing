@@ -1,7 +1,6 @@
 <div class="header">
   <div class="header-title">read<span>books</span></div>
   <div class="header-content">
-
     <app-search></app-search>
 
     <div class="notification">
@@ -11,23 +10,23 @@
         [matBadgeHidden]="!notifications"
         matBadgeSize="small"
         class="bell-icon"
-      >notifications_none</mat-icon>
+        >notifications_none</mat-icon
+      >
     </div>
 
     <div class="user-menu-container">
-      <button
-        mat-button
-        [matMenuTriggerFor]="menu"
-        class="user-menu"
-      ></button>
+      <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
     </div>
 
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Add book</button>
-      <button mat-menu-item>requests</button>
-      <button mat-menu-item>profile</button>
-      <button mat-menu-item>logout</button>
-    </mat-menu>
+    <mat-menu #menu="matMenu" backdropClass="customize">
+      <button mat-menu-item class="userButton">Add book</button>
+      <button mat-menu-item class="userButton">requests</button>
+      <div class="profileMenu">
+        <button mat-button class="user-avatar"></button>
+        <button mat-menu-item class="userButton">profile</button>
+      </div>
 
+      <button mat-menu-item class="userButton">logout</button>
+    </mat-menu>
   </div>
 </div>

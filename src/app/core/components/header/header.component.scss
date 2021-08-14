@@ -45,3 +45,29 @@
   cursor: pointer;
 }
 
+.user-avatar {
+ 
+  height: 20px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 15px;
+  
+}
+
+.profileMenu{
+  display: flex;
+
+}
+
+.customize+* .mat-menu-panel {
+  margin-top: 10px;
+  background-color: grey;
+  color: blue;
+  width: 200px;
+  opacity: 0.8;
+}
+
+.userButton {
+  color:honeydew
+}
