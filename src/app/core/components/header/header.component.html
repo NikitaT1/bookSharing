@@ -19,14 +19,23 @@
     </div>
 
     <mat-menu #menu="matMenu" backdropClass="customize">
-      <button mat-menu-item class="userButton">Add book</button>
-      <button mat-menu-item class="userButton">requests</button>
-      <div class="profileMenu">
+      <div class="listMenu">
         <button mat-button class="user-avatar"></button>
         <button mat-menu-item class="userButton">profile</button>
       </div>
-
-      <button mat-menu-item class="userButton">logout</button>
+      <div class="listMenu">
+        <mat-icon class="listIcon">plus_one</mat-icon>
+        <button mat-menu-item class="userButton">Add book</button>
+      </div>
+      <div class="listMenu">
+        <mat-icon class="listIcon">star</mat-icon>
+        <button mat-menu-item class="userButton">requests</button>
+      </div>
+      <div class="listMenu">
+        <mat-icon class="listIcon" >logout</mat-icon>
+        <button mat-menu-item class="userButton">logout</button>
+      </div>
+      
     </mat-menu>
   </div>
 </div>

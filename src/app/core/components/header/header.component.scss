@@ -55,8 +55,9 @@
   
 }
 
-.profileMenu{
+.listMenu{
   display: flex;
+  align-items:center
 
 }
 
@@ -69,5 +70,9 @@
 }
 
 .userButton {
+  color:honeydew
+}
+
+.listIcon{
   color:honeydew
 }
