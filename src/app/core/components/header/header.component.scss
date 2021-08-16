@@ -45,34 +45,28 @@
   cursor: pointer;
 }
 
-.user-avatar {
- 
-  height: 20px;
-  background-color: lightgreen;
-  border-radius: 50%;
-  border: 1px solid grey;
-  padding: 15px;
-  
-}
 
-.listMenu{
-  display: flex;
-  align-items:center
 
-}
-
-.customize+* .mat-menu-panel {
+.mat-menu-panel{
   margin-top: 10px;
   background-color: grey;
-  color: blue;
   width: 200px;
-  opacity: 0.8;
+  
+
+  .listMenu{
+    display: flex;
+    align-items:center;
+    color: lightgreen;
+    border-radius: 9px;
+
+  }
 }
 
-.userButton {
-  color:honeydew
-}
+// .customize+* .mat-menu-panel {
+//   margin-top: 10px;
+//   background-color: grey;
+//   width: 200px;
 
-.listIcon{
-  color:honeydew
-}
+// }
+
+

@@ -18,23 +18,23 @@
       <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
     </div>
 
-    <mat-menu #menu="matMenu" backdropClass="customize">
+    <mat-menu #menu="matMenu" class="user-menu">
       <div class="listMenu">
-        <button mat-button class="user-avatar"></button>
+        <app-avatar></app-avatar>
         <button mat-menu-item class="userButton">profile</button>
       </div>
-      <div class="listMenu">
-        <mat-icon class="listIcon">plus_one</mat-icon>
-        <button mat-menu-item class="userButton">Add book</button>
-      </div>
-      <div class="listMenu">
+      <button class="listMenu" (click)="choosePoint()">
+        <mat-icon class="listIcon">compare_arrows</mat-icon>
+        <span mat-menu-item class="userButton">Add book</span>
+      </button>
+      <button class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon">star</mat-icon>
         <button mat-menu-item class="userButton">requests</button>
-      </div>
-      <div class="listMenu">
+      </button>
+      <button class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon" >logout</mat-icon>
         <button mat-menu-item class="userButton">logout</button>
-      </div>
+      </button>
       
     </mat-menu>
   </div>

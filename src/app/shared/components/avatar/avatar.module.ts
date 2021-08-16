@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { SearchComponent } from './search.component';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { AvatarComponent } from './avatar.component';
 @NgModule({
-  declarations: [SearchComponent],
+  declarations: [AvatarComponent],
   imports: [CommonModule, MatIconModule],
   providers: [], 
-  exports: [SearchComponent],
+  exports: [AvatarComponent],
 })
-export class SearchModule {} 
+export class AvatarModule {}

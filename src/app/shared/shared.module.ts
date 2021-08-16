@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     FormComponent,
-    PaginationComponent,
+    PaginationComponent
   ],
   imports: [CommonModule],
   providers: [],
