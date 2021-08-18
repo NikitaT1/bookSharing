@@ -19,23 +19,22 @@
     </div>
 
     <mat-menu #menu="matMenu" class="user-menu">
-      <div class="listMenu">
+      <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <app-avatar></app-avatar>
-        <button mat-menu-item class="userButton">profile</button>
-      </div>
-      <button class="listMenu" (click)="choosePoint()">
+        <span  class="userButton">profile</span>
+      </button>
+      <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon">compare_arrows</mat-icon>
-        <span mat-menu-item class="userButton">Add book</span>
+        <span>Add book</span>
       </button>
-      <button class="listMenu" (click)="choosePoint()">
+      <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon">star</mat-icon>
-        <button mat-menu-item class="userButton">requests</button>
+        <span>requests</span>
       </button>
-      <button class="listMenu" (click)="choosePoint()">
+      <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon" >logout</mat-icon>
-        <button mat-menu-item class="userButton">logout</button>
+        <span>logout</span>
       </button>
-      
     </mat-menu>
   </div>
 </div>
