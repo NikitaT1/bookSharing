@@ -10,6 +10,26 @@
           border-radius: 9px;
         }
   }
+  .mat-menu-panel.note-menu {
+      margin-top: 10px;
+      background-color: grey;
+      color: blue;
+      display: flex;
+      align-items: center;
+      width: 400px;
+      .listMenu{
+            display: flex;
+            align-items:center;
+            color: whitesmoke;
+            border-radius: 9px;
+          }
+      .deleteMessage{
+            display: flex;
+            align-items:center;
+            color: whitesmoke;
+            width: 30px;
+      }    
+    }
 
 
   // .customize+* .mat-menu-panel {

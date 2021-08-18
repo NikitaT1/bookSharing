@@ -11,31 +11,36 @@
         matBadgeSize="small"
         class="bell-icon"
         click="showNotifications()"
-        [matMenuTriggerFor]="notificationMenu"
+        [matMenuTriggerFor]="menuNotification"
         >notifications_none</mat-icon
       >
     </div>
-    <mat-menu #notificationMenu="matMenu" class="user-menu">
-      <div
-        itemSize="50"
-        minBufferPx="200"
-        maxBufferPx="400"
-        class="example-viewport"
-      >
-        <div *cdkVirtualFor="let item of items" class="example-item">
-          {{ item }}
-        </div>
+    <mat-menu #menuNotification="matMenu" class="note-menu" >
+     
+      <div *ngFor="let item of items" class="listMenu">
+        <button mat-menu-item class="listMenu" (click)="markAsRead()">
+        {{item}} 
+      </button>
+        <button mat-menu-item class="listMenu" (click)="markAsRead()">
+          mark as read
+        </button>
+        <button mat-menu-item class="deleteMessage" (click)="choosePoint()">
+          <mat-icon class="deleteMessage">delete</mat-icon>
+        </button>
       </div>
+      
     </mat-menu>
-
+    
+ 
     <div class="user-menu-container">
       <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
     </div>
+    
 
     <mat-menu #menu="matMenu" class="user-menu">
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <app-avatar></app-avatar>
-        <span class="userButton">Profile</span>
+        <span  class="userButton">Profile</span>
       </button>
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon">book</mat-icon>
@@ -46,7 +51,7 @@
         <span>Requests</span>
       </button>
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
-        <mat-icon class="listIcon">logout</mat-icon>
+        <mat-icon class="listIcon" >logout</mat-icon>
         <span>Logout</span>
       </button>
     </mat-menu>
