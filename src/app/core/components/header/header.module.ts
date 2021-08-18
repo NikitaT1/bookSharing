@@ -6,12 +6,13 @@ import { MatMenuModule} from '@angular/material/menu';
 import {MatBadgeModule} from '@angular/material/badge'
 import { SearchModule } from './../../../shared/components/search/search.module';
 import { AvatarModule } from 'src/app/shared/components/avatar/avatar.module';
-//import { AvatarModule } from 'src/app/shared/components/avatar/avatar.module';
+import { NotificationListModule } from './../../../shared/components/notification-list/notification-list.module';
 
 @NgModule({
   declarations: [HeaderComponent],
-  imports: [SearchModule, CommonModule, MatIconModule, MatMenuModule, MatBadgeModule, AvatarModule],
-  providers: [],
+  imports: [SearchModule, CommonModule, MatIconModule, MatMenuModule, MatBadgeModule, AvatarModule, NotificationListModule],
+
+providers: [],
   exports: [HeaderComponent],
 })
 export class HeaderModule {}
