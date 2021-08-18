@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   notifications = 0;
+
+  choosePoint(){
+    console.log('bum!')
+  }
 }
+ 

@@ -1,0 +1,20 @@
+.mat-menu-panel.user-menu {
+    margin-top: 10px;
+    background-color: grey;
+    color: blue;
+    width: 200px;
+    .listMenu{
+          display: flex;
+          align-items:center;
+          color: whitesmoke;
+          border-radius: 9px;
+        }
+  }
+
+
+  // .customize+* .mat-menu-panel {
+  //   margin-top: 10px;
+  //   background-color: grey;
+  //   color: blue;
+  //   width: 200px;
+  // }  
