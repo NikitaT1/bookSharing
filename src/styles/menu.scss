@@ -1,20 +1,58 @@
 .mat-menu-panel.user-menu {
-    margin-top: 10px;
-    background-color: grey;
-    color: blue;
-    width: 200px;
-    .listMenu{
-          display: flex;
-          align-items:center;
-          color: whitesmoke;
-          border-radius: 9px;
-        }
+  margin-top: 10px;
+  background-color: grey;
+  width: 200px;
+  .listMenu {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    border-radius: 9px;
   }
-
-
-  // .customize+* .mat-menu-panel {
-  //   margin-top: 10px;
-  //   background-color: grey;
-  //   color: blue;
-  //   width: 200px;
-  // }  
+}
+.mat-menu-panel.note-menu {
+  margin-top: 10px;
+  background-color: grey;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  max-width: initial;
+  .mat-menu-content {
+    width: 100%;
+    padding: 8px 16px;
+    .noteMenuControl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .deleteMessages {
+      display: flex;
+      justify-content: center;
+      background-color: grey;
+      color: var(--body-color);
+      width: 50px;
+      cursor: pointer;
+      border-color: transparent
+    }
+    .deleteMessages:hover {
+      box-shadow: 0 0 12px lightgreen;
+      color: lightgreen;
+  } 
+    .markAsReadButton{
+      display: flex;
+      justify-content: center;
+      width:150px;
+      background-color: grey;
+      color: var(--body-color);
+      cursor: pointer;
+      border-color: transparent;
+    }
+    .markAsReadButton:hover {
+      box-shadow: 0 0 12px lightgreen;
+      color: lightgreen;
+  } 
+    .notifications{
+      padding: 10px;
+    }
+  }
+}
