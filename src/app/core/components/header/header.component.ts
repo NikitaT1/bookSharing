@@ -14,7 +14,7 @@ export class HeaderComponent {
     console.log('bum!')
   }
   markAsRead(){
-    
+    console.log('mark as read')
   }
 
   showNotification(){

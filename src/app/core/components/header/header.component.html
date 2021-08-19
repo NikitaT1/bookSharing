@@ -16,17 +16,22 @@
       >
     </div>
     <mat-menu #menuNotification="matMenu" class="note-menu" >
-     
-      <div *ngFor="let item of items" class="listMenu">
-        <button mat-menu-item class="listMenu" (click)="markAsRead()">
-        {{item}} 
+
+      <div class="noteMenuControl">
+      <button class="markAsReadButton" (click)="markAsRead()">
+        mark as read
       </button>
-        <button mat-menu-item class="listMenu" (click)="markAsRead()">
-          mark as read
-        </button>
-        <button mat-menu-item class="deleteMessage" (click)="choosePoint()">
-          <mat-icon class="deleteMessage">delete</mat-icon>
-        </button>
+      <button class="deleteMessages" (click)="choosePoint()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+
+
+      <div *ngFor="let item of items" class="listMenu">
+        <span>
+        {{item}} 
+        </span>
+       
       </div>
       
     </mat-menu>

@@ -13,28 +13,21 @@
   .mat-menu-panel.note-menu {
       margin-top: 10px;
       background-color: grey;
-      color: blue;
+      color: whitesmoke;
       display: flex;
       align-items: center;
-      width: 400px;
-      .listMenu{
+      width: 200px;
+      .noteMenuControl{
             display: flex;
-            align-items:center;
+            justify-content: center;
+            align-content: space-between;
+            align-items: center;
             color: whitesmoke;
-            border-radius: 9px;
           }
-      .deleteMessage{
+          .deleteMessages{
             display: flex;
             align-items:center;
             color: whitesmoke;
             width: 30px;
-      }    
+          }   
     }
-
-
-  // .customize+* .mat-menu-panel {
-  //   margin-top: 10px;
-  //   background-color: grey;
-  //   color: blue;
-  //   width: 200px;
-  // }  
