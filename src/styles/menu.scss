@@ -16,11 +16,11 @@
       color: whitesmoke;
       display: flex;
       align-items: center;
-      width: 200px;
+      width: 360px;
+      max-width: initial;
       .noteMenuControl{
             display: flex;
-            justify-content: center;
-            align-content: space-between;
+            justify-content: space-between;
             align-items: center;
             color: whitesmoke;
           }
