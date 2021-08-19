@@ -15,37 +15,31 @@
         >notifications_none</mat-icon
       >
     </div>
-    <mat-menu #menuNotification="matMenu" class="note-menu" >
-
+    <mat-menu #menuNotification="matMenu" class="note-menu">
       <div class="noteMenuControl">
-      <button class="markAsReadButton" (click)="markAsRead()">
-        mark as read
-      </button>
-      <button class="deleteMessages" (click)="choosePoint()">
-        <mat-icon>delete</mat-icon>
-      </button>
-    </div>
-
-
-      <div *ngFor="let item of items" class="listMenu">
-        <span>
-        {{item}} 
-        </span>
-       
+        <button class="markAsReadButton" (click)="markAsRead()">
+          mark as read
+        </button>
+        <button class="deleteMessages" (click)="choosePoint()">
+          <mat-icon>delete</mat-icon>
+        </button>
       </div>
-      
+
+      <div *ngFor="let item of items" class="notifications">
+        <span>
+          {{ item }}
+        </span>
+      </div>
     </mat-menu>
-    
- 
+
     <div class="user-menu-container">
       <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
     </div>
-    
 
     <mat-menu #menu="matMenu" class="user-menu">
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <app-avatar></app-avatar>
-        <span  class="userButton">Profile</span>
+        <span class="userButton">Profile</span>
       </button>
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon">book</mat-icon>
@@ -56,7 +50,7 @@
         <span>Requests</span>
       </button>
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
-        <mat-icon class="listIcon" >logout</mat-icon>
+        <mat-icon class="listIcon">logout</mat-icon>
         <span>Logout</span>
       </button>
     </mat-menu>

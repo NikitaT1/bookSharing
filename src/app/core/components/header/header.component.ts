@@ -9,7 +9,8 @@ import { Component, ChangeDetectionStrategy, } from '@angular/core';
 export class HeaderComponent {
   notifications = 0;
   isNotificationShowed = false
-  items = ['message1','message2','message3','message4']
+  items = ['message111111111111111111 111111111111111111 11111111111111111111 111111111 11111111111111111111111',
+  'message2','message3','message4']
   choosePoint(){
     console.log('bum!')
   }
