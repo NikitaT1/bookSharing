@@ -1,0 +1,17 @@
+<div mat-dialog-title>Add Book</div>
+<div mat-dialog-content>
+  <div class="titleAuthor">
+  <form class="example-form"  [formGroup]="formGroup">
+   <app-typeahead [ctrl]="getCtrl('title')"></app-typeahead>
+  </form>
+  <form class="example-form" [formGroup]="formGroup">
+    <app-typeahead [ctrl]="getCtrl('Author name')"></app-typeahead>
+   </form>
+  </div>
+   <form class="example-form" [formGroup]="formGroup">
+    <app-typeahead [ctrl]="getCtrl('Author name')"></app-typeahead>
+   </form>
+<div mat-dialog-actions class="dialogsButton">
+  <button mat-button (click)="close()">No Thanks</button>
+  <button mat-button cdkFocusInitial (click)="submit()">Ok</button>
+</div>
