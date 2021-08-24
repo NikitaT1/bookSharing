@@ -10,6 +10,7 @@ import { AddBookDialogComponent } from './add-book-dialog/add-book-dialog.compon
 import { MatDialogModule } from '@angular/material/dialog';
 import { TypeaheadModule } from './../../../shared/controls/typeahead/typeahead.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { InputModule } from 'src/app/shared/controls/input/input.module';
 
 @NgModule({
   declarations: [HeaderComponent, AddBookDialogComponent],
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AvatarModule,
     MatDialogModule,
     TypeaheadModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InputModule
   
   ],
 

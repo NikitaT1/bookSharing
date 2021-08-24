@@ -1,0 +1,21 @@
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label *ngIf="label">{{label}}</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControl]="ctrl"
+      [placeholder]="placeholder"
+      [matAutocomplete]="auto"
+      #description
+    />
+  
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options$ | async " [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  
+    <mat-error *ngIf="ctrl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>

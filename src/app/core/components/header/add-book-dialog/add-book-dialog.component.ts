@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
@@ -9,8 +9,10 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class AddBookDialogComponent {
 
-  formGroup: FormGroup;
+  //@ViewChild('title') title: getElementById
 
+  formGroup: FormGroup;
+ 
   constructor(private dialogRef: MatDialogRef<AddBookDialogComponent>) {
     this.formGroup = new FormGroup({
       title: new FormControl('', Validators.required),
@@ -18,6 +20,8 @@ export class AddBookDialogComponent {
       description: new FormControl(''),
     });
   }
+
+  
 
   getCtrl(name: string): FormControl{
     return this.formGroup.get(name) as FormControl
