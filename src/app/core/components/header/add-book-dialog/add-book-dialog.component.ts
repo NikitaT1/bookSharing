@@ -9,8 +9,6 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class AddBookDialogComponent {
 
-  //@ViewChild('title') title: getElementById
-
   formGroup: FormGroup;
  
   constructor(private dialogRef: MatDialogRef<AddBookDialogComponent>) {
