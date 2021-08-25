@@ -9,13 +9,15 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--body-color-light);
-  border-bottom: 1px solid #efefef
+  border-bottom: 1px solid #efefef;
+  z-index: 100;
+  position: fixed;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  column-gap: 15px
+  column-gap: 15px;
 }
 
 .notification,
@@ -61,14 +63,13 @@
 
 .example-item {
   height: 50px;
-} 
-
-.markAsReadButton{
-  font-size: 7;
 }
 
- 
-
-
-
-
+.markAsReadButton {
+  font-size: 9 bold;
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

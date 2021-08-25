@@ -35,7 +35,7 @@
     <div class="user-menu-container">
       <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
     </div>
-
+ 
     <mat-menu #menu="matMenu" class="user-menu">
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <app-avatar></app-avatar>
@@ -44,6 +44,10 @@
       <button mat-menu-item class="listMenu" (click)="addBook()">
         <mat-icon class="listIcon">book</mat-icon>
         <span>Add book</span>
+      </button>
+      <button mat-menu-item class="listMenu" (click)="bookMenu()">
+        <mat-icon class="listIcon">menu_book</mat-icon>
+        <span>Books</span>
       </button>
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <mat-icon class="listIcon">compare_arrows</mat-icon>

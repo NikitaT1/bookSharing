@@ -19,7 +19,4 @@ export class AddButtonComponent implements OnInit{
     console.log('onInit: ', this.items)
   }
 
-
-
-  
 }

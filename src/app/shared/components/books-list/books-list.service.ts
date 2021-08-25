@@ -1,4 +1,4 @@
-import { IBook } from './../../../core/interfaces/book.interface';
+import { IBook } from '../../../core/interfaces/book.interface';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';

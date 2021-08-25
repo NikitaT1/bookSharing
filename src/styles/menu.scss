@@ -29,27 +29,30 @@
       display: flex;
       justify-content: center;
       background-color: grey;
-      color: var(--body-color);
+      color: lightgreen;
       width: 50px;
       cursor: pointer;
-      border-color: transparent
+      border-color: transparent;
+      border-radius: 5px;
     }
     .deleteMessages:hover {
       box-shadow: 0 0 12px lightgreen;
-      color: lightgreen;
+      color: var(--body-color);
   } 
     .markAsReadButton{
       display: flex;
       justify-content: center;
       width:150px;
       background-color: grey;
-      color: var(--body-color);
+      color: lightgreen;
       cursor: pointer;
       border-color: transparent;
+      font-weight: bold;
+      font-size: 18;
     }
     .markAsReadButton:hover {
       box-shadow: 0 0 12px lightgreen;
-      color: lightgreen;
+      color: var(--body-color);
   } 
     .notifications{
       padding: 10px;
