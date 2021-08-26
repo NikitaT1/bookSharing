@@ -1,7 +1,9 @@
-:host {
-    input{
-      height: 40px;
-      width: 300px;
-      background-color: whitesmoke
-    } 
+:host ::ng-deep {
+  display: block;
+  .mat-form-field {
+    width: 100%;
+    .mat-form-field-flex {
+      padding: 0 16px;
+    }
   }
+}

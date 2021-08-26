@@ -19,7 +19,7 @@
       <div class="noteMenuControl">
         <button class="markAsReadButton" (click)="markAsRead()">
           mark as read
-        </button> 
+        </button>
         <button class="deleteMessages" (click)="choosePoint()">
           <mat-icon>delete</mat-icon>
         </button>
@@ -33,9 +33,9 @@
     </mat-menu>
 
     <div class="user-menu-container">
-      <button mat-button [matMenuTriggerFor]="menu" class="user-menu"></button>
+      <app-avatar [matMenuTriggerFor]="menu"></app-avatar>
     </div>
- 
+
     <mat-menu #menu="matMenu" class="user-menu">
       <button mat-menu-item class="listMenu" (click)="choosePoint()">
         <app-avatar></app-avatar>

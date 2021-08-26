@@ -4,6 +4,7 @@ import { HeaderComponent } from './header.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
 import { SearchModule } from './../../../shared/components/search/search.module';
 import { AvatarModule } from 'src/app/shared/components/avatar/avatar.module';
 import { AddBookDialogComponent } from './add-book-dialog/add-book-dialog.component';
@@ -15,8 +16,7 @@ import { InputModule } from 'src/app/shared/controls/input/input.module';
 @NgModule({
   declarations: [HeaderComponent, AddBookDialogComponent],
   imports: [
- 
-  SearchModule,
+    SearchModule,
     CommonModule,
     MatIconModule,
     MatMenuModule,
@@ -25,10 +25,9 @@ import { InputModule } from 'src/app/shared/controls/input/input.module';
     MatDialogModule,
     TypeaheadModule,
     ReactiveFormsModule,
-    InputModule
-  
+    InputModule,
+    MatButtonModule
   ],
-
   providers: [],
   exports: [HeaderComponent],
 })

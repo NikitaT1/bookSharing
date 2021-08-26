@@ -1,4 +1,4 @@
-<mat-form-field class="example-full-width" appearance="fill">
+<mat-form-field class="example-full-width" appearance="outline">
     <mat-label *ngIf="label">{{label}}</mat-label>
     <input
       type="text"
@@ -6,7 +6,7 @@
       [formControl]="ctrl"
       [placeholder]="placeholder"
     />
-  
+
     <mat-error *ngIf="ctrl.hasError('required')">
       Field is <strong>required</strong>
     </mat-error>
