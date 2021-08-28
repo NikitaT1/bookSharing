@@ -6,8 +6,8 @@ import { BooksListComponent } from './shared/components/books-list/books-list.co
 
 const routes: Routes = [
   {path: '', component: HomepageComponent, pathMatch: 'full'},
+  {path: 'books-list', component: BooksListComponent},
   {path: '**', redirectTo: ''},
-  {path: 'books-list', component: BooksListComponent}
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@ import { GenresListComponent } from './genres-list/genres-list.component';
 import { GenresListService } from './genres-list/genres.service';
 import { HomepageComponent } from './homepage.component';
 import { FavoriteButtonModule } from 'src/app/shared/components/favorite-button/favorite-button.module';
+import { TopComponent } from './top/top.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FavoriteButtonModule } from 'src/app/shared/components/favorite-button/
     TopBooksComponent,
     GenresListComponent,
     HomepageComponent,
+    TopComponent,
   ],
   imports: [CommonModule, AddButtonModule, FavoriteButtonModule],
 

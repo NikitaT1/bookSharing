@@ -1,0 +1,102 @@
+.top-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 34px;
+  margin-bottom: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6fc1cc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 50%;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+  box-sizing: border-box;
+}
+
+input:checked + .slider {
+  background-color: lightgreen;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px lightgreen;
+}
+
+input:checked + .slider:before {
+  --transform: calc(100% - 8px);
+  -webkit-transform: translateX(var(--transform));
+  -ms-transform: translateX(var(--transform));
+  transform: translateX(var(--transform));
+  border-radius: 10px;
+}
+
+.top-books {
+  margin-left: 12px;
+}
+.top-authors {
+  margin-right: 11px;
+}
+
+.top-books-list {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.book-img {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.top-book-name{
+  position: relative;
+  width: 110px;
+  text-align: center;
+}

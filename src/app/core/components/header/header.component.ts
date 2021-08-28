@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy, } from '@angular/core';
-import { Router } from '@angular/router'
 import { MatDialog } from '@angular/material/dialog';
 import { AddBookDialogComponent } from './add-book-dialog/add-book-dialog.component';
 
@@ -15,7 +14,7 @@ export class HeaderComponent {
   items = ['message111111111111111111 111111111111111111 11111111111111111111 111111111 11111111111111111111111',
     'message2','message3','message4']
 
-  constructor(private dialog: MatDialog, private router: Router){}
+  constructor(private dialog: MatDialog){}
 
   choosePoint(): void {
     console.log('bum!')
@@ -28,9 +27,7 @@ export class HeaderComponent {
     this.dialog.open(AddBookDialogComponent, { width: '660px' })
   }
 
-  bookMenu(): void {
-    this.router.navigateByUrl('/books-list')
-  }
+  
 
   showNotification(): void {
     this.isNotificationShowed = !this.isNotificationShowed

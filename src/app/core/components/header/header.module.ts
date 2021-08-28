@@ -12,11 +12,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { TypeaheadModule } from './../../../shared/controls/typeahead/typeahead.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputModule } from 'src/app/shared/controls/input/input.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent, AddBookDialogComponent],
   imports: [
-    SearchModule,
+ 
+  SearchModule,
     CommonModule,
     MatIconModule,
     MatMenuModule,
@@ -26,8 +28,9 @@ import { InputModule } from 'src/app/shared/controls/input/input.module';
     TypeaheadModule,
     ReactiveFormsModule,
     InputModule,
-    MatButtonModule
-  ],
+    MatButtonModule,
+    RouterModule
+  ],  
   providers: [],
   exports: [HeaderComponent],
 })

@@ -52,7 +52,7 @@ export class BooksListService {
   getAuthors(): string[] {
     return ['J.R.R. Tolkien', 'Douglas Adams', 'Frank Herbert'];
   }
-
+ 
   getBooks(): Observable<IBook[]> {
     return of(books);
   }

@@ -1,8 +1,8 @@
 .main-wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
+  grid-template-rows:  1fr;
+  grid-template-columns: 17% 1fr 15%;
+  padding-top: 32px;
 }
 
 * {
