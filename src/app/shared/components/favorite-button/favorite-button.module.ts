@@ -11,6 +11,6 @@ import { MatIconModule } from '@angular/material/icon'
   providers: [],
   exports: [
     FavoriteButtonComponent
-  ],
+  ], 
 })  
 export class FavoriteButtonModule {}

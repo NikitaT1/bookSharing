@@ -1,0 +1,38 @@
+.details-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.details-img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.bookButton {
+  cursor: pointer;
+  height: 26px;
+  width: 50%;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 10px;
+  //box-sizing: border-box;
+  background-color: lightgreen;
+}
+
+.details-raiting{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
