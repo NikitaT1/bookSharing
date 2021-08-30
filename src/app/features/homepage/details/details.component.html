@@ -7,21 +7,11 @@
     <div class="details-name">{{details.author}}</div>
     <div class="details-name">{{details.genre}}</div>
     <div class="details-description">{{details.description}}</div>
-    <div class="details-raiting">
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star</mat-icon>
-        <mat-icon>star_border</mat-icon>
-
+    <div class="details-raiting" *ngFor="let star1 of detailsArr">
+        <mat-icon class="details-star">star</mat-icon>
     </div>
 
     
-    <button class="bookButton" (click)="bookBook()">Book these book</button>
+    <button class="book-button" (click)="bookBook()">Book</button>
 
 </div>

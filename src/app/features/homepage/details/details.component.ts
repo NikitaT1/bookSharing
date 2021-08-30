@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-details',
@@ -17,6 +18,14 @@ export class DetailsComponent  {
     isFavorite: true,
     id: 2
   }
+
+  
+  detailsArr = new Array(this.details.rating - 1)
+
+
+  OnInit(): void {
+  }
+
 
   bookBook(){
     console.log('booked')
