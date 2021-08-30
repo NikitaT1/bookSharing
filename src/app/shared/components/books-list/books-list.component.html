@@ -1,8 +1,9 @@
+
+<div class="books-list-title">
+  <span>Book your book</span>
+</div>
 <table class="books">
   <thead>
-    <tr>
-      <th>List of books</th>
-    </tr>
     <tr>
       <th class="cell-cover"></th>
       <th class="cell-cover"></th>
@@ -11,7 +12,7 @@
           [items]="buttonContent.authors"
           name="Author"
         ></app-add-button>
-      </th>
+      </th> 
       <th class="cell-cover"></th>
       <th class="cell-cover">
         <app-add-button
@@ -24,15 +25,17 @@
   </thead>
   <tbody>
     <tr *ngFor="let book of books$ | async">
-      <th class="cell-cover">
+      <td class="cell-cover">
         <img src="{{ book.img }}" alt="" class="book-img" />
-      </th>
+      </td>
       <td class="cell-cover">{{ book.name }}</td>
       <td class="cell-cover">{{ book.author }}</td>
       <td class="cell-cover">{{ book.genre }}</td>
       <td class="cell-cover">{{ book.rating }}</td>
       <td class="cell-cover">
-        <app-favorite-button [isFavorite]="book.isFavorite" ></app-favorite-button>
+        <app-favorite-button
+          [isFavorite]="book.isFavorite"
+        ></app-favorite-button>
       </td>
     </tr>
   </tbody>

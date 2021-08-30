@@ -12,25 +12,24 @@ export class HeaderComponent {
   notifications = 0;
   isNotificationShowed = false
   items = ['message111111111111111111 111111111111111111 11111111111111111111 111111111 11111111111111111111111',
-  'message2','message3','message4']
-  
+    'message2','message3','message4']
+
   constructor(private dialog: MatDialog){}
 
-
-  
-  choosePoint(){
+  choosePoint(): void {
     console.log('bum!')
   }
-  markAsRead(){
+  markAsRead(): void {
     console.log('mark as read')
   }
 
   addBook(): void {
-    this.dialog.open(AddBookDialogComponent, { panelClass: 'dialog-menu'})
+    this.dialog.open(AddBookDialogComponent, { width: '660px' })
   }
 
-  showNotification(){
+  
+
+  showNotification(): void {
     this.isNotificationShowed = !this.isNotificationShowed
   }
 }
- 

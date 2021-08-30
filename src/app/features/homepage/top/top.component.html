@@ -1,0 +1,25 @@
+<div class="top-main">
+  <div class="top">Top</div>
+  <label class="switch">
+    <input type="checkbox" />
+    <span class="slider" (click)="changeBookAuthor()">
+      <span class="top-books">Books</span>
+      <span class="top-authors">Authors</span>
+    </span>
+  </label>
+
+  <div *ngIf="topBook" class="top-books-list">
+    <div class="top-book" *ngFor="let topBook of topBooks$ | async">
+      <img src="{{ topBook.img }}" alt="" class="book-img" />
+      <div class="top-book-name">{{ topBook.name }}</div>
+    </div>
+  </div>
+  <div *ngIf="!topBook" class="top-books-list">
+    <div class="top-book" *ngFor="let topAuthor of topAuthors$ | async">
+      <img src="{{ topAuthor.img }}" alt="" class="book-img" />
+      <div class="top-book-name">{{ topAuthor.name }}</div>
+    </div>
+  </div>
+
+
+</div>

@@ -1,7 +1,25 @@
-.dialogsButton{
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+:host {
+  .mat-dialog-content {
+    .content-form {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 16px;
 
+      app-typeahead {
+        flex: 1 1 220px;
+      }
+
+      app-input {
+        flex: 1;
+      }
+    }
+  }
+
+  .actions {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

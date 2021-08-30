@@ -1,4 +1,4 @@
-import { IBook } from './../../../core/interfaces/book.interface';
+import { IBook } from '../../../core/interfaces/book.interface';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
@@ -52,7 +52,7 @@ export class BooksListService {
   getAuthors(): string[] {
     return ['J.R.R. Tolkien', 'Douglas Adams', 'Frank Herbert'];
   }
-
+ 
   getBooks(): Observable<IBook[]> {
     return of(books);
   }

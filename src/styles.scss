@@ -6,19 +6,3 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.dialog-menu .mat-dialog-container {   
-  padding: 0;
-  height: 500px;
-  width: 600px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: gray;
-  color: whitesmoke
-}
-
-.dialog-menu .dialogsButton{
-  margin: 10px;
-}

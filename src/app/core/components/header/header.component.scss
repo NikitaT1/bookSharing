@@ -1,74 +1,74 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 0 30px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--body-color-light);
-  border-bottom: 1px solid #efefef
-}
+:host {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 30px;
+    font-size: 14px;
+    color: var(--body-color-light);
+    border-bottom: 1px solid #efefef;
+  }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  column-gap: 15px
-}
+  .header-content {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
 
-.notification,
-.user-menu-container {
-  width: 42px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
+  .notification,
+  .user-menu-container {
+    width: 42px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
 
-.header-title {
-  font-size: 16px;
-  font-weight: 400;
-  margin-right: 120px;
+  .header-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 120px;
 
-  span {
-    font-weight: 500;
-    color: var(--body-color);
+    span {
+      font-weight: 500;
+      color: var(--body-color);
+    }
+  }
+
+  .user-menu {
+    background-color: lightgreen;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .userButton {
+    margin-left: 10px;
+  }
+
+  .listIcon {
+    color: whitesmoke;
+  }
+
+  .example-viewport {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+  }
+
+  .example-item {
+    height: 50px;
+  }
+
+  .markAsReadButton {
+    font-size: 9 bold;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-
-.user-menu {
-  background-color: lightgreen;
-  border-radius: 50%;
-  border: 1px solid grey;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.userButton {
-  margin-left: 10px;
-}
-
-.listIcon {
-  color: whitesmoke;
-}
-
-.example-viewport {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-}
-
-.example-item {
-  height: 50px;
-} 
-
-.markAsReadButton{
-  font-size: 7;
-}
-
- 
-
-
-
-

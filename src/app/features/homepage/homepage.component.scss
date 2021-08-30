@@ -1,11 +1,10 @@
 .main-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    margin-top: 110px;
-  }
+  display: grid;
+  grid-template-rows:  1fr;
+  grid-template-columns: 17% 1fr 15%;
+  padding-top: 32px;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
