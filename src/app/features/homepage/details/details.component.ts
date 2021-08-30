@@ -20,7 +20,8 @@ export class DetailsComponent  {
   }
 
   
-  detailsArr = new Array(this.details.rating - 1)
+  detailsStar = new Array(this.details.rating - 1)
+  detailsNoStar = new Array(10 - this.details.rating)
 
 
   OnInit(): void {
