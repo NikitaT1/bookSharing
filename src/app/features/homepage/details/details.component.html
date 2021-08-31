@@ -1,0 +1,31 @@
+<div class="details-main">
+    <div class="details-title">Details</div>
+    <div>
+        <img src="{{ details.img }}" alt="" class="details-img" />
+    </div>
+    <div class="details-name">{{details.name}}</div>
+    <div class="details-name">{{details.author}}</div>
+    <div class="details-name">{{details.genre}}</div>
+    <div >
+        <div *ngIf="hide" class="details-description">
+        {{details.description}}
+        <button class="hide-button" (click)="showHideDetails()">Hide</button>
+    </div>
+    <div *ngIf="!hide" class="details-description">
+        {{details.shortDescription}}
+        <button class="hide-button" (click)="showHideDetails()">Show more</button>
+    </div>
+    </div>
+    <div class="details-raiting">
+    <div *ngFor="let star1 of detailsStar">
+        <mat-icon class="details-star">star</mat-icon>
+    </div>
+    <div *ngFor="let star2 of detailsNoStar">
+        <mat-icon class="details-star">star_border</mat-icon>
+    </div>
+</div>
+
+    
+    <button class="book-button" (click)="bookBook()">Book</button>
+
+</div>
