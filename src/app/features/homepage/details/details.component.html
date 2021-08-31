@@ -6,7 +6,16 @@
     <div class="details-name">{{details.name}}</div>
     <div class="details-name">{{details.author}}</div>
     <div class="details-name">{{details.genre}}</div>
-    <div class="details-description">{{details.description}}</div>
+    <div >
+        <div *ngIf="hide" class="details-description">
+        {{details.description}}
+        <button class="hide-button" (click)="showHideDetails()">Hide</button>
+    </div>
+    <div *ngIf="!hide" class="details-description">
+        {{details.shortDescription}}
+        <button class="hide-button" (click)="showHideDetails()">Show more</button>
+    </div>
+    </div>
     <div class="details-raiting">
     <div *ngFor="let star1 of detailsStar">
         <mat-icon class="details-star">star</mat-icon>

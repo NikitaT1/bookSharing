@@ -13,8 +13,8 @@
 
 .details-img {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 15px;
   object-fit: cover;
   margin-bottom: 15px;
@@ -28,7 +28,7 @@
   bottom: 4px;
   border-radius: 10px;
   //box-sizing: border-box;
-  background-color: lightgreen;
+  background-color: #6fc1cc;;
 }
 
 .details-raiting{
@@ -49,4 +49,18 @@
 .details-star{
   display: flex;
   flex-direction: row;
+}
+
+.hide-button{
+  cursor: pointer;
+  height: 26px;
+  width: 30%;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 10px;
+  background-color: lightgreen;
+}
+
+.details-description{
+
 }
