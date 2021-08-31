@@ -28,30 +28,29 @@
   bottom: 4px;
   border-radius: 10px;
   //box-sizing: border-box;
-  background-color: #6fc1cc;;
+  background-color: #6fc1cc;
 }
 
-.details-raiting{
+.details-raiting {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-
-.details-raiting2{
+.details-raiting2 {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-.details-star{
+.details-star {
   display: flex;
   flex-direction: row;
 }
 
-.hide-button{
+.hide-button {
   cursor: pointer;
   height: 26px;
   width: 30%;
@@ -61,6 +60,6 @@
   background-color: lightgreen;
 }
 
-.details-description{
-
+.details-description {
+  text-align: justify;
 }
